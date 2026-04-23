@@ -1,0 +1,15 @@
+{
+    "name": "mix.marlock",
+    "description": "Native Ubuntu Touch Matrix client",
+    "architecture": "$ENV{ARCH}",
+    "title": "Mix",
+    "hooks": {
+        "mix": {
+            "apparmor": "mix.apparmor",
+            "desktop":  "mix.desktop"
+        }
+    },
+    "version": "1.0.0",
+    "maintainer": "Vladyslav Marchenko <marlock@duck.com>",
+    "framework" : "$ENV{CLICK_FRAMEWORK}"
+}
