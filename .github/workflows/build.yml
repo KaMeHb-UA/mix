@@ -1,0 +1,36 @@
+name: Build
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: Pull Clickable
+        run: |
+          docker pull clickable/ci-ut24.04-1.x-arm64:latest
+
+      - name: Install dependencies
+        run: yarn
+
+      - name: Build TS part
+        run: yarn build:js
+
+      - name: Assemble the app
+        run: |
+          docker run --env UV_INSTALL_DIR=/usr/local --volume ./:/app clickable/ci-ut24.04-1.x-arm64:latest bash -c "cd /app && clickable build"
+
+      - name: Publish to OpenStore
+        env:
+          OPENSTORE_API_KEY: ${{ secrets.OPENSTORE_API_KEY }}
+        run: yarn publish

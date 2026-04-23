@@ -1,0 +1,23 @@
+{
+	"name": "mix",
+	"description": "Native Ubuntu Touch Matrix client",
+	"version": "0.0.1",
+	"packageManager": "yarn@4.14.1",
+	"scripts": {
+		"build:js": "node build.mjs",
+		"build": "./.clickable.sh build",
+		"mobile": "./.clickable.sh",
+		"desktop": "./.clickable.sh desktop",
+		"logs": "./.clickable.sh logs"
+	},
+	"dependencies": {
+		"events": "^3.3.0",
+		"matrix-js-sdk": "^41.4.0-rc.0"
+	},
+	"devDependencies": {
+		"@sveltejs/acorn-typescript": "^1.0.9",
+		"acorn": "^8.16.0",
+		"esbuild": "^0.28.0",
+		"typescript": "^6.0.3"
+	}
+}
