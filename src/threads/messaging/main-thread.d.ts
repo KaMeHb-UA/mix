@@ -1,7 +1,4 @@
 import * as MainThread from '@/app.exported';
-
-type Namespace<T> = {
-    [x in keyof T]: T[x];
-};
+import type { Namespace } from './namespace';
 
 export type MainThread = Namespace<typeof MainThread>;

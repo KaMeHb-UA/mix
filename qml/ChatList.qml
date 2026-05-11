@@ -37,7 +37,7 @@ Page {
             ListItemLayout {
                 title.text: model.name || "Unknown Room"
                 subtitle.text: model.lastMessage || ""
-                
+
                 Label {
                     SlotsLayout.position: SlotsLayout.Trailing
                     text: model.unreadCount > 0 ? model.unreadCount : (model.isEncrypted ? "🔒" : "")

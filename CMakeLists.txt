@@ -12,7 +12,7 @@ execute_process(
 set(QT_IMPORTS_DIR "lib/${ARCH_TRIPLET}")
 
 set(PROJECT_NAME "mix")
-set(FULL_PROJECT_NAME "mix.marlock")
+set(FULL_PROJECT_NAME "mix.marlock.ua")
 set(DATA_DIR /)
 set(DESKTOP_FILE_NAME ${PROJECT_NAME}.desktop)
 

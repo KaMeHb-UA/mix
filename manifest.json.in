@@ -1,5 +1,5 @@
 {
-    "name": "mix.marlock",
+    "name": "mix.marlock.ua",
     "description": "Native Ubuntu Touch Matrix client",
     "architecture": "$ENV{ARCH}",
     "title": "Mix",

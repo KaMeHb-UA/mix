@@ -1,12 +1,12 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the mix.marlock package.
+# This file is distributed under the same license as the mix.marlock.ua package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: mix.marlock\n"
+"Project-Id-Version: mix.marlock.ua\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-10 17:54+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"

@@ -1,7 +1,4 @@
 import * as WorkerThread from '@/app.worker';
-
-type Namespace<T> = {
-    [x in keyof T]: T[x];
-};
+import type { Namespace } from './namespace';
 
 export type WorkerThread = Namespace<typeof WorkerThread>;
